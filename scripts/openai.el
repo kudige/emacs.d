@@ -77,6 +77,7 @@
 (add-hook 'shell-mode-hook 'openai-shell-mode-hook)
 (add-hook 'sh-mode-hook 'openai-shell-mode-hook)
 (add-hook 'eshell-mode-hook 'openai-shell-mode-hook)
+(add-hook 'term-mode-hook 'openai-shell-mode-hook)
 
 (defcustom openai-text-system-prompt "You are a writing assistant. You will generate text based on what I ask and always return the content within a code block"
   "System prompt for OpenAI in Text mode"
